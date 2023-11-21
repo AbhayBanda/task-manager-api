@@ -1,0 +1,23 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "RESTFul API for a simple task manager application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "REST",
+    "API",
+    "Task",
+    "Manager",
+    "API"
+  ],
+  "author": "Abhay Banda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
