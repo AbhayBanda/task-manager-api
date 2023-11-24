@@ -8,6 +8,8 @@ This RESTful API will allow users to perform CRUD operations (Create, Read, Upda
 
 - **Endpoint:** `GET /tasks`
 - **Description:** Retrieve a list of all tasks.
+- **Query Parameters:**
+  - `flag` (optional): A boolean flag indicating whether to include a specific task based on completion status. Set to `true` to get tasks which are completed.
 
 ### Retrieve a single task by ID
 

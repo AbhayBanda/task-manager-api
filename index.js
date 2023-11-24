@@ -11,7 +11,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/tasks", (req, res) => {
-  return res.send(data);
+  const { flag } = req.query;
+
+  if (flag == "true" || flag == "false") {
+    const filteredTasks = data.filter(
+      (task) => task.flag === ("true" === flag)
+    );
+    return res.status(200).send(filteredTasks);
+  }
+  return res.status(200).send(data);
 });
 
 app.get("/tasks/:id", (req, res) => {
